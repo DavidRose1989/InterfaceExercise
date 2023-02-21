@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace InterfaceExercise
 {
@@ -41,8 +42,8 @@ namespace InterfaceExercise
             //Now, create objects of your 3 classes and give their members values;
             //Creatively display and organize their values
 
-            Car car1 = new Car();
-            car1.Year = "2022";
+            Car car1 = new Car();                              //This is how you set a property.
+            car1.Year = "2022";                                //Using dot notation you can start to build onto your property. 
             car1.Make = "Ferarri";
             car1.Model = "M8";
             car1.Convertable = true;
@@ -72,11 +73,11 @@ namespace InterfaceExercise
 
             
 
-            List<IVehicle> vehicles = new List<IVehicle>(){car1, truck1, suv1}; //object initializer syntax
-   
+            List<IVehicle> vehicles = new List<IVehicle>(){car1, truck1, suv1}; //object initializer syntax when creating list. 
+                                                                                //This is another way to add a car to a list. 
             
-            foreach (var vehicle in vehicles)
-            {
+            foreach (var vehicle in vehicles)                                   //The foreach loop is used to show all of the vehicles that were added to the vehicles list. 
+            {                                                                   //The Vehicle stats method was called in the scope of the foreach loop because with the vehicle variable to show all of the stats. 
                 vehicle.VehicleStats();
             }
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    internal class SUV : IVehicle, ICompany
+    internal class SUV : IVehicle, ICompany    //When you conform a Interface you use a comma and the name has to start with a I.  
     {
-        public string Year { get; set; }
+        public string Year { get; set; }       //This is how you get your property and give it features. 
 
         public string Make { get; set; }
         public string Model { get; set; }
